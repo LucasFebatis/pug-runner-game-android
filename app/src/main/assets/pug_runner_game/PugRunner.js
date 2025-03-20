@@ -59,7 +59,7 @@ var gfx = {
 		this.context = gfx.canvas.getContext("2d");
 		this.context.font = "30px ArialBlack";
 		this.width = 900;
-		this.height = 500;
+		this.height = 415;
 		gfx.canvas.width = gfx.width;
 		gfx.canvas.height = gfx.height;
 		gfx.resize();
