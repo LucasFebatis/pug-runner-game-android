@@ -2,6 +2,10 @@ function start() {
 	role.start();
 }
 
+var targetFPS = 120; // Defina o FPS desejado
+var frameInterval = 1000 / targetFPS;
+var lastFrameTime = 0;
+
 // Objects
 
 class Sound {
@@ -387,31 +391,34 @@ var role = {
 		role.update();
 	},
 
-	update: function () {
-		switch (role.state) {
-			case role.states.loading:
-				role.loading();
-				break;
-			case role.states.stop:
-				role.stop();
-				break;
-			case role.states.prepare:
-				role.prepare();
-				break;
-			case role.states.running:
-				role.running();
-				break;
-			case role.states.losting:
-				role.losting();
-				break;
-			case role.states.lost:
-				role.lost();
-				break;
-			default:
-				console.info("Erro! state = " + role.state);
-				return;
+	update: function (timestamp) {
+		if (timestamp - lastFrameTime >= frameInterval) {
+		    lastFrameTime = timestamp;
+			switch (role.state) {
+				case role.states.loading:
+					role.loading();
+					break;
+				case role.states.stop:
+					role.stop();
+					break;
+				case role.states.prepare:
+					role.prepare();
+					break;
+				case role.states.running:
+					role.running();
+					break;
+				case role.states.losting:
+					role.losting();
+					break;
+				case role.states.lost:
+					role.lost();
+					break;
+				default:
+					console.info("Erro! state = " + role.state);
+					return;
+			}
+			gfx.update();
 		}
-		gfx.update();
 		window.requestAnimationFrame(role.update);
 	},
 	loading: function() {
