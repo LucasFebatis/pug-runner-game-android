@@ -1,4 +1,4 @@
-package com.febatis.pugrunnergameandroid.ui.theme
+package com.febatis.mygamehtml.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

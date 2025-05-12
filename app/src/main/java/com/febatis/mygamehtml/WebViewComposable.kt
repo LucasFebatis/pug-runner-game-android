@@ -1,4 +1,4 @@
-package com.febatis.pugrunnergameandroid
+package com.febatis.mygamehtml
 
 import android.webkit.WebView
 import androidx.compose.foundation.layout.fillMaxSize
@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
-import com.febatis.pugrunnergameandroid.ui.theme.PugRunnerAndroidVersionTheme
+import com.febatis.mygamehtml.ui.theme.PugRunnerAndroidVersionTheme
 
 @Composable
 fun WebViewComposable() {

@@ -1,6 +1,5 @@
-package com.febatis.pugrunnergameandroid.ui.theme
+package com.febatis.mygamehtml.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

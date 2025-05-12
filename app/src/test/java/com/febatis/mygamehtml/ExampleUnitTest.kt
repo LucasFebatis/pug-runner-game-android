@@ -1,4 +1,4 @@
-package com.febatis.pugrunnergameandroid
+package com.febatis.mygamehtml
 
 import org.junit.Test
 

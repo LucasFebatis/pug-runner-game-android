@@ -1,4 +1,4 @@
-package com.febatis.pugrunnergameandroid.ui.theme
+package com.febatis.mygamehtml.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

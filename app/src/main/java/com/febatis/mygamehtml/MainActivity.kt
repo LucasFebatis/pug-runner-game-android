@@ -1,4 +1,4 @@
-package com.febatis.pugrunnergameandroid
+package com.febatis.mygamehtml
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.febatis.pugrunnergameandroid.ui.theme.PugRunnerAndroidVersionTheme
+import com.febatis.mygamehtml.ui.theme.PugRunnerAndroidVersionTheme
 
 class MainActivity : ComponentActivity() {
     private val flags = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE
