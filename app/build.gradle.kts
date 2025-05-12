@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.febatis.pugrunnergameandroid"
+    namespace = "com.febatis.mygamehtml"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.febatis.pugrunnergameandroid"
+        applicationId = "com.febatis.mygamehtml"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
